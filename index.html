@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #cssportal-grid {
+            display: grid;
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-columns: repeat(6, 1fr);
+            gap: 0;
+            width: auto; /* Modification */
+            height: 100vh; /* Modification */
+        }
+        #div2 {
+            grid-area: 2 / 1 / 6 / 3;
+            background-color: rgba(60,114,143, 0.5);
+        }
+        #div1 {
+            grid-area: 1 / 1 / 2 / 7;
+            background-color: rgba(118,144,174, 0.5);
+			background: #000000;
+			color: #FFF;
+			display: flex
+        }
+		#div1 .logo{
+			font-size: 24px;
+			padding: 20px;
+			margin-left: 25px
+		}
+		#div1 .logo a{
+			color: #FFF;
+			text-decoration: none
+		}
+		#div1 ul{
+			margin: 0;
+			padding: 0;
+			display: flex;
+			width: 50%;
+			margin-left: auto
+		}
+        #div3 {
+            grid-area: 6 / 1 / 7 / 7;
+            background-color: rgba(45,11,149, 0.5);
+        }
+        #div4 {
+            grid-area: 2 / 3 / 6 / 5;
+            background-color: rgba(86,126,13, 0.5);
+        }
+        #div5 {
+            grid-area: 2 / 5 / 6 / 7;
+            background-color: rgba(138,119,26, 0.5);
+        }
+		ul li{
+			padding: 20px;
+			list-style: none
+		}
+		ul li a{
+			color: #FFF;
+			display: block;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-weight: bold
+		}
+    </style>
+</head>
+<body>
+    <div id="cssportal-grid">
+        <div id="div1">
+				<div class="logo">
+					<a href="#">LOGO</a>
+				</div>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+		</div>
+        <div id="div2">div2</div>
+        <div id="div3">div3</div>
+        <div id="div4">div4</div>
+        <div id="div5">div5</div>
+    </div>
+</body>
+</html>
